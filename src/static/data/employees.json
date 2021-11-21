@@ -1,0 +1,46 @@
+[{
+  "id": "aw45f25v",
+  "category": "business",
+  "title": "Business Category",
+  "isComplete": true,
+  "startDate": "Wednesday September 3rd",
+  "startTime": "9:00am",
+  "endDate": "Wednesday September 3rd",
+  "endTime":"9:00am"
+}, {
+  "id": "tuso1282",
+  "category": "family",
+  "title": "Family Category",
+  "isComplete": false,
+  "startDate": "Wednesday September 3rd",
+  "startTime": "9:00am",
+  "endDate": "Wednesday September 3rd",
+  "endTime":"9:00am"
+}, {
+  "id": "9sjkgor5",
+  "category": "pets",
+  "title": "Pet Category",
+  "isComplete": true,
+  "startDate": "Wednesday September 3rd",
+  "startTime": "9:00am",
+  "endDate": "Wednesday September 3rd",
+  "endTime":"9:00am"
+}, {
+  "id": "on8m2949",
+  "category": "personal",
+  "title": "Personal Category",
+  "isComplete": false,
+  "startDate": "Wednesday September 3rd",
+  "startTime": "9:00am",
+  "endDate": "Wednesday September 3rd",
+  "endTime":"9:00am"
+}, {
+  "id": "laotnc23",
+  "category": "other",
+  "title": "Other Category",
+  "isComplete": true,
+  "startDate": "Wednesday September 3rd",
+  "startTime": "9:00am",
+  "endDate": "Wednesday September 3rd",
+  "endTime":"9:00am"
+}]

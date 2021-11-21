@@ -1,0 +1,33 @@
+.error-logo {
+    fill: rgb(3, 104, 93);
+    width: 20rem;
+    height: auto;
+    margin: auto;
+    margin-top: 8rem;
+    display: block;
+}
+
+.error p {
+    text-align: center;
+    font-size: 3.6rem;
+    font-family: 'Lobster', cursive;
+}
+
+.error a {
+    color: rgb(74, 139, 131);
+    font-size: 1rem;
+    display: block;
+    width: 8rem;
+    margin: 1rem auto;
+    text-align: center;
+    border: 2px solid rgb(74, 139, 131);
+    transition: 0.5s;
+}
+
+.error a:hover {
+    text-decoration: none;
+    background-color: rgb(3, 104, 93);
+    color: white;
+    border: 2px solid rgb(3, 104, 93);
+    transition: 0.5s;
+}

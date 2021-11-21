@@ -1,0 +1,181 @@
+.brand {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.brand .heading {
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    width: 70%;
+}
+
+.title-div {
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.brand .classtag {
+    font-family: 'Open Sans';
+    text-align: right;
+    height: 5rem;
+    font-size: 1rem;
+    width: 10rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    background-color: rgb(33, 37, 41);
+    border-radius: 0 0 0 10rem;
+    color: white;
+}
+
+.brand-logo {
+    fill: rgb(3, 104, 93);
+    width: 30%;
+    height: auto;
+    display: block;
+}
+
+.list-item {
+    width: 70%
+}
+
+.list-item h2 {
+    font-size: 2.2rem;
+    font-family: 'Lobster', cursive;
+}
+
+.list-item p {
+    font-size: 1rem;
+}
+
+.true{
+    p:first-of-type{
+        display: none;
+    }  
+}
+
+.false{
+    p:last-of-type{
+        display: none;
+    }
+} 
+
+.edit {
+    margin: 0 1rem;
+    width: 4rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5rem;
+}
+
+.business {
+    margin: 3rem;
+    padding: 2rem;
+    box-shadow: 1rem 1rem;
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.business .edit {
+    background-color: rgb(165, 77, 253);
+    width: 4rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5rem;
+}
+
+.family {
+    margin: 3rem;
+    padding: 2rem;
+    box-shadow: 1rem 1rem;
+    background-color: rgb(206, 25, 25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.family .edit {
+    background-color: rgb(248, 43, 43);
+    width: 4rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5rem;
+}
+
+.pets {
+    margin: 3rem;
+    padding: 2rem;
+    box-shadow: 1rem 1rem;
+    background-color: rgb(61, 134, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pets .edit {
+    background-color: rgb(101, 190, 41);
+    width: 4rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5rem;
+}
+
+.personal {
+    margin: 3rem;
+    padding: 2rem;
+    box-shadow: 1rem 1rem;
+    background-color: rgb(8, 101, 189);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.personal .edit {
+    background-color: rgb(88, 151, 235);
+    width: 4rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5rem;
+}
+
+.other {
+    margin: 3rem;
+    padding: 2rem;
+    box-shadow: 1rem 1rem;
+    background-color: rgb(206, 7, 179);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.other .edit {
+    background-color: rgb(253, 91, 205);
+    width: 4rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5rem;
+}
+
+footer {
+    background-color: rgb(255, 38, 0);
+    padding: 0.7rem;
+}
+
+.add-button {
+    display: block;
+    margin-left: auto;
+    padding: 1.6rem;
+    font-size: 1.8rem;
+    font-family: 'Lobster', cursive;
+    background-color: tomato;
+    border: 0;
+    border-radius: 10rem;
+}
+
+.add-button:hover {
+    background-color: rgb(33, 37, 41);
+    color: wheat;
+}
