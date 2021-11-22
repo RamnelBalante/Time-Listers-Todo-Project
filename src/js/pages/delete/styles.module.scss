@@ -13,7 +13,12 @@
 
     button {
         background: yellowgreen;
-        margin: 3rem auto;
+        margin: 3rem;
         padding: 1.6rem 2rem;
+    }
+
+    > div {
+        display: flex;
+        justify-content: center;
     }
 }

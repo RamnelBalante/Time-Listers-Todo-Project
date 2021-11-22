@@ -4,6 +4,7 @@ import button from "../../components/ui/button"
 import reducer from "../../redux/reducers"
 import { Router } from "../../routes/router"
 import { getStore } from "../../redux/store"
+import { todoTemplate } from "../../components/cards/todoitem"
 
 import styles from "./styles.module.scss"
 
@@ -15,13 +16,13 @@ import styles from "./styles.module.scss"
     
     const deletePage = function(props){
         
-        
         const page = document.createElement('div')
         let headerTemplate = `
             <header class="welcome center-in-page ${styles.deletePage}">
                 <h1>Delete ToDo List</h1>
                 <p>delete this ${props.cat} list?</p>
-                <div></div>
+                <div class="button-container">
+                </div>
             </header>
         `
         function cleanUp(){
@@ -46,10 +47,12 @@ import styles from "./styles.module.scss"
         }
 
     const pageHeader = makeElement(headerTemplate)
+    const pageItem = (props.item)
     cancelButton.addEventListener('click', onCancelDelete)
     deleteButton.addEventListener('click', onDeleteEmployee)
-    pageHeader.querySelector('div').append(cancelButton, deleteButton)
+    pageHeader.querySelector('div.button-container').append(cancelButton, deleteButton)
     page.append(pageHeader)
+    page.append(pageItem)
 
     return page
 }

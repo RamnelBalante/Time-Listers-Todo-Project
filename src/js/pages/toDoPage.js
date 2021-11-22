@@ -25,9 +25,20 @@ const todoPage = function(){
     }
 
     function onDeleteEmployee (e){
-      const employeeId = {id:e.currentTarget.dataset.key, cat:e.currentTarget.parentElement.parentElement.parentElement.className};
+      const employeeId = {id:e.currentTarget.dataset.key, cat:e.currentTarget.parentElement.parentElement.parentElement.className, item:e.currentTarget.parentElement.parentElement.parentElement};
       cleanUp()
       Router('/delete', employeeId)
+    }
+
+    function onEditEmployee (e){
+      const employeeId = {id:e.currentTarget.dataset.key};
+      cleanUp()
+      Router('/edit', employeeId)
+    }
+
+    function onAddEmployee (e){
+      cleanUp()
+      Router('/add')
     }
 
     function render(){
@@ -37,9 +48,11 @@ const todoPage = function(){
       const elements = employeeList.map(emp => todoTemplate(emp))
       elements.forEach(element=> {
         element.querySelector('#delete').addEventListener('click', onDeleteEmployee)
+        element.querySelector('#edit').addEventListener('click', onEditEmployee)
 
         ul.append(element)
       })
+      add.addEventListener('click', onAddEmployee)
       page.append(brnd)
       page.append(container)
       page.append(add)

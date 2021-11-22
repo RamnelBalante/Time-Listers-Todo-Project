@@ -13,11 +13,11 @@
 .title-div {
     display: flex;
     align-items: center;
-    width: 25%;
+    width: 20rem;
 }
 
 .brand .classtag {
-    font-family: 'Open Sans';
+    font-family: 'Lobster', cursive;
     text-align: right;
     height: 5rem;
     font-size: 1rem;
@@ -36,8 +36,15 @@
     display: block;
 }
 
+li {
+    width: 30rem;
+    margin: 5rem auto;
+}
+
 .list-item {
-    width: 70%
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .list-item h2 {
@@ -49,14 +56,23 @@
     font-size: 1rem;
 }
 
+.true p, .false p {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    background-color: #212529;
+    margin: 1rem;
+}
+
 .true{
-    p:first-of-type{
+    color: rgb(180, 255, 29);
+    p:last-of-type{
         display: none;
     }  
 }
 
 .false{
-    p:last-of-type{
+    color: rgb(246, 74, 74);
+    p:first-of-type{
         display: none;
     }
 } 
@@ -70,7 +86,6 @@
 }
 
 .business {
-    margin: 3rem;
     padding: 2rem;
     box-shadow: 1rem 1rem;
     background-color: rebeccapurple;
@@ -79,16 +94,20 @@
     align-items: center;
 }
 
-.business .edit {
-    background-color: rgb(165, 77, 253);
-    width: 4rem;
-    padding: 0.5rem;
-    border: 0;
-    border-radius: 5rem;
+.business button {
+    border: none;
+    background-color: rgb(157, 80, 233);
+    box-shadow: 0.3rem 0.3rem;
+    margin: 1rem 0;
+    margin-right: 1rem;
+}
+
+.business button:hover {
+    background-color: white;
+    color: rgb(157, 80, 233);
 }
 
 .family {
-    margin: 3rem;
     padding: 2rem;
     box-shadow: 1rem 1rem;
     background-color: rgb(206, 25, 25);
@@ -97,16 +116,21 @@
     align-items: center;
 }
 
-.family .edit {
-    background-color: rgb(248, 43, 43);
-    width: 4rem;
-    padding: 0.5rem;
-    border: 0;
-    border-radius: 5rem;
+.family button {
+    border: none;
+    background-color: rgb(233, 80, 80);
+    box-shadow: 0.3rem 0.3rem;
+    margin: 1rem 0;
+    margin-right: 1rem;
+}
+
+.family button:hover {
+    background-color: white;
+    color: rgb(233, 80, 80);
 }
 
 .pets {
-    margin: 3rem;
+
     padding: 2rem;
     box-shadow: 1rem 1rem;
     background-color: rgb(61, 134, 12);
@@ -115,16 +139,20 @@
     align-items: center;
 }
 
-.pets .edit {
-    background-color: rgb(101, 190, 41);
-    width: 4rem;
-    padding: 0.5rem;
-    border: 0;
-    border-radius: 5rem;
+.pets button {
+    border: none;
+    background-color: rgb(94, 192, 64);
+    box-shadow: 0.3rem 0.3rem;
+    margin: 1rem 0;
+    margin-right: 1rem;
+}
+
+.pets button:hover {
+    background-color: white;
+    color: rgb(94, 192, 64);
 }
 
 .personal {
-    margin: 3rem;
     padding: 2rem;
     box-shadow: 1rem 1rem;
     background-color: rgb(8, 101, 189);
@@ -133,16 +161,20 @@
     align-items: center;
 }
 
-.personal .edit {
-    background-color: rgb(88, 151, 235);
-    width: 4rem;
-    padding: 0.5rem;
-    border: 0;
-    border-radius: 5rem;
+.personal button {
+    border: none;
+    background-color: rgb(79, 191, 211);
+    box-shadow: 0.3rem 0.3rem;
+    margin: 1rem 0;
+    margin-right: 1rem;
+}
+
+.personal button:hover {
+    background-color: white;
+    color: rgb(79, 191, 211);
 }
 
 .other {
-    margin: 3rem;
     padding: 2rem;
     box-shadow: 1rem 1rem;
     background-color: rgb(206, 7, 179);
@@ -151,12 +183,17 @@
     align-items: center;
 }
 
-.other .edit {
-    background-color: rgb(253, 91, 205);
-    width: 4rem;
-    padding: 0.5rem;
-    border: 0;
-    border-radius: 5rem;
+.other button {
+    border: none;
+    background-color: rgb(255, 122, 226);
+    box-shadow: 0.3rem 0.3rem;
+    margin: 1rem 0;
+    margin-right: 1rem;
+}
+
+.other button:hover {
+    background-color: white;
+    color: rgb(255, 122, 226);
 }
 
 footer {

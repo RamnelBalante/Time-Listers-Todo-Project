@@ -1,10 +1,6 @@
 import makeElement from "../../utils/makeElement"
-import edit from "../ui/editButton"
-import remove from "../ui/deleteButton"
 
 const todoTemplate = function ({id,category,title,isComplete,endDate}) {
-const edt = edit()
-const del = remove()
     const template =   `
     <li class="${category}" data-key="${id}">
     <div class="list-item">
@@ -13,16 +9,15 @@ const del = remove()
             <p>completed</p>
             <p>incomplete</p>
         </div>
-        <p>${endDate}</p>
-        <p>
+        <p>Due by ${endDate}</p>
+        <p class="button_pair">
             <button data-key="${id}" id="delete">delete</button>
+            <button data-key="${id}" id="edit">edit</button>
         </p>
     </div>
  </li>
     `
 const temp = makeElement(template)
-temp.append(edt)
-temp.append(del)
 
 return temp
 }

@@ -26,15 +26,24 @@ const reducer  = function( action){
   console.log(action.payload, action.type)
      
     switch(action.type){
-        case "edit": return "edit an employee";
-        case "delete":
+        case "edit": 
         const store = getStore()
-        const index = action.payload.index
-        const newState = [...store.slice(0,index), ...store.slice(index+1)]
-        updateStore(newState)
+        const index = store.findIndex(employee=> employee.id === action.payload.id)
+        store[index] = action.payload
         action.cb();
         return null
-        case "add": return "add a new employee";
+        case "delete":
+        const deleteStore = getStore()
+        const deleteIndex = action.payload.index
+        const deleteNewState = [...deleteStore.slice(0,deleteIndex), ...deleteStore.slice(deleteIndex+1)]
+        updateStore(deleteNewState)
+        action.cb();
+        return null
+        case "add":
+        const addStore = getStore()
+        addStore.push(action.payload)
+        action.cb();
+        return null
         default: return getStore()
     }
 
